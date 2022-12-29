@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Password Generator </title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Roboto+Mono:ital,wght@1,100&family=Source+Code+Pro:wght@300&family=Source+Sans+Pro:ital,wght@1,300&display=swap');
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .main {
+            width: 100%;
+            height: 100vh;
+            background-color: #2ecc71;
+            justify-content: center;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+        .box {
+            font-family: 'Montserrat', sans-serif;
+            width: 40%;
+            background-color: #27ae60;
+            border-radius: 5px;
+            padding-bottom: 5px;
+            color: white;
+            font-weight: bold;
+        }
+        .row {
+            display: block;
+            padding: 10px;
+        }
+        .input {
+            width: 100%;
+            border: none;
+            padding: 7px;
+            font-size: large;
+            font-weight: bold;
+        }
+        .left {
+            float: left;
+        }
+        .right {
+            float: right;
+
+        }
+        .right input {
+            width: 50px;
+        }
+        #btn {
+            width: 100%;
+            padding: 5px;
+            margin-top: 5px;
+            border: none;
+            border-radius: 7px;
+            background-color: rgb(7, 255, 255);
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="box">
+            <div class="row">
+                <input type="text" value="Testing" class="input" readonly id="password">
+            </div>
+            <div class="row">
+                <div class="left">
+                    <label for="">
+                        Password Lenght
+                    </label>
+                </div>
+                <div class="right"> <input type="number" id="pass-len"  value="8"></div>
+                <br>
+            </div>
+            <div class="row">
+                <div class="left">
+                    <label for="">
+                        UpperCase
+                    </label>
+                </div>
+                <div class="right"> <input type="checkbox" id="upper-case" checked></div>
+            </div><br>
+            <div class="row">
+                <div class="left">
+                    <label for="">
+                        LowerCase
+                    </label>
+                </div>
+                <div class="right"> <input type="checkbox" id="lower-case" checked></div>
+            </div><br>
+            <div class="row">
+                <div class="left">
+                    <label for="">
+                        Containis Number
+                    </label>
+                </div>
+                <div class="right"> <input type="checkbox" id="number" checked></div>
+            </div><br>
+            <div class="row">
+                <div class="left">
+                    <label for="">
+                    Contains Symbol
+                    </label>
+                </div>
+                <div class="right"> <input type="checkbox" id="symbol" checked></div>
+            </div>
+            <div class="row">
+                <button id="btn">Generat</button>
+            </div>
+        </div>
+    </div>
+    <script src="p16.js"></script>
+</body>
+
+</html>
